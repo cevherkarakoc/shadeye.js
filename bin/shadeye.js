@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+const three = require('three');
 const bs = require('browser-sync').create();
 
 let frag = '';
 let vert = '';
 
 program
-    .version('0.0.2')
+    .version('0.0.3')
     .usage('vertexShader.vert fragmentShader.frag')
     .arguments('<vertexShader> <fragmentShader>')
     .action( function (vertexShader, fragmentShader) {
