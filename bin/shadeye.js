@@ -22,7 +22,7 @@ if (!program.args.length) program.help();
 
 const cwd = process.cwd();
 bs.init({
-    server: [cwd,__dirname+'/../lib',__dirname+'/../node_modules/three/build/'],
+    server: [cwd,__dirname+'/../lib',__dirname+'/../node_modules/three/build/',__dirname+'/../../three/build/'],
     files: [
         cwd+'/lib/index.html',
         cwd+'/lib/render.js',
