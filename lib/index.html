@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Shadeye</title>
+        <script src="./three.min.js" ></script>
+        <script src="./render.js" ></script>
+        <script src="./request.js" ></script>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var params = new URLSearchParams(window.location.search);
+            var frag = params.get('frag');
+            var vert = params.get('vert');
+            
+            var fragString;
+            var vertString;
+
+            request(vert, function ( resVert ) {
+                vertString = resVert;
+                request(frag, function ( resFrag ) {
+                    fragString = resFrag;
+                              
+                    init(vertString,fragString);
+                    animate();
+                } )
+            } )
+
+        </script>
+    </body>
+</html>

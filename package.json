@@ -1,0 +1,20 @@
+{
+  "name": "shadeye.js",
+  "version": "0.0.1",
+  "description": "A WebGL Shader Viewer",
+  "main": "./bin/shadeye.js",
+  "repository": "https://github.com/cevherkarakoc/shadeye.js.git",
+  "author": "Cevher <cevherkarakoc@live.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "node ./bin/shadeye.js"
+  },
+  "bin": {
+    "shadeye": "./bin/shadeye.js"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "commander": "^2.12.2",
+    "three": "^0.89.0"
+  }
+}
