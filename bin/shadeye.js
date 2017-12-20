@@ -7,7 +7,7 @@ let frag = '';
 let vert = '';
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .usage('vertexShader.vert fragmentShader.frag')
     .arguments('<vertexShader> <fragmentShader>')
     .action( function (vertexShader, fragmentShader) {
