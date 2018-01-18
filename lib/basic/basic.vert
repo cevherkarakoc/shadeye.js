@@ -1,3 +1,11 @@
+varying vec2 frag_uv;
+varying vec3 v_uv; 
+
+
 void main() {
-    gl_Position = vec4( position, 1.0 );
+    frag_uv = uv;
+
+    v_uv = position;
+
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 }

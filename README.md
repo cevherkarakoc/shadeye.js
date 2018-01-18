@@ -12,5 +12,7 @@ $ yarn global add shadeye.js
 ## Usage
 
 ```
-$ shadeye ./basic.vert ./basic.frag
+$ shadeye ./myVertex.vert ./myFragment.frag
+ # or
+$ shadeye ./myVertex.vert ./myFragment.frag ./mymesh.obj
 ```
