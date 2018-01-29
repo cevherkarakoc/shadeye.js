@@ -9,7 +9,7 @@ let vert = '';
 let obj = 'default';
 
 program
-    .version('0.1.0')
+    .version('0.1.1')
     .usage('vertexShader.vert fragmentShader.frag')
     .arguments('<vertexShader> <fragmentShader> [object]')
     .action( function (vertexShader, fragmentShader, object) {

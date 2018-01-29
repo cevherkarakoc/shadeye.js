@@ -1,6 +1,6 @@
 {
   "name": "shadeye.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A WebGL Shader Viewer",
   "main": "./bin/shadeye.js",
   "repository": "https://github.com/cevherkarakoc/shadeye.js.git",
